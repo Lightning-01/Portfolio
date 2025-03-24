@@ -96,12 +96,12 @@ img {
 .section {
     padding: 6rem 0 2rem;
 }
-.section_subtitle {
+.section__subtitle {
     display: block;
     font-size: var(--small-font-size);
     margin-bottom: 4rem;
 }
-.section_title, .section_subtitle {
+.section__title, .section__subtitle {
     text-align: center;
 }
 
@@ -153,8 +153,14 @@ img {
     }
 }
 @media screen and (max-width: 768px) {
+    body {
+        margin: 00 var(--header-height) 0;
+    }
     .section {
         padding: 2rem 0 4rem;
+    }
+    .section__subtitle {
+        margin-bottom: var(--mb-3);
     }
 }
 @media screen and (max-width: 576px) {
