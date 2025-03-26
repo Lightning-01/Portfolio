@@ -11,7 +11,7 @@ import React from "react";
                          <HiOutlineCheckBadge />
                          <div>
                              <h3 className="skills__name">Frontend</h3>
-                             <span className="skills__level">HTML, CSS, JavaScript, React.js, Bootstrap</span>
+                             <span className="skills__level">HTML, CSS, JavaScript, React.js</span>
                          </div>
                      </div>
                      <div className="skills__data">

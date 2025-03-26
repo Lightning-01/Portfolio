@@ -28,8 +28,6 @@ import React from "react";
                              <span className="skills__level">AWS / GCP</span>
                          </div>
                      </div>
-                 </div>
-                 <div className="skills__group">
                      <div className="skills__data">
                          <HiOutlineCheckBadge />
                          <div>

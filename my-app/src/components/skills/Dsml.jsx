@@ -29,7 +29,7 @@ const Backend = () => {
             <HiOutlineCheckBadge />
             <div>
               <h3 className="skills__name">
-                Data Preprocessing, Feature Engineering
+                Data Preprocessing
               </h3>
               {/* <span className="skills__level">Basic</span> */}
             </div>
