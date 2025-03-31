@@ -6,6 +6,7 @@ import Skills from './components/skills/Skills';
 import Portfolio from './components/projects/Portfolio';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import Chatbot from './components/chatbot/Chatbot';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Contact />
       </main>
       <Footer />
+      <Chatbot />
     </>
   );
 }
