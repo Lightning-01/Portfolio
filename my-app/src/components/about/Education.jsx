@@ -2,76 +2,76 @@ import React from "react";
 import "./education.css";
 import { HiOutlineAcademicCap, HiOutlineCalendar } from "react-icons/hi";
 
-const Qualification = () => {
-    
+const Education = () => {
     return (
-    <section className="qualification section">
-        <div className="qualification__container container">
-            <div className="qualification__tabs">
-                <div className="qualification__button button--flex qualification__active">
-                    <HiOutlineAcademicCap className="qualification__icon" />
+        <div className="education__container">
+            <div className="education__tabs">
+                <div className="education__button button--flex education__active">
+                    <HiOutlineAcademicCap className="education__icon" />
                     Education
                 </div>
             </div>
 
-            <div className="qualification__sections">
-                <div className="qualification__content qualification__content-active">
-                    <div className="qualification__data">
+            <div className="education__sections">
+                <div className="education__content education__content-active">
+                    <div className="education__data">
                         <div>
-                            <h3 className="qualification__title">IIT Guwahati</h3>
-                                <div className="education__content">
-                                    <span className="qualification__subtitle">B.Tech</span>
-                                    <span className="qualification__subtitle">Major: Civil Engineering</span>
-                                    <span className="qualification__subtitle">Minor: Mathematics & Computing</span>
-                                </div>
-                            <div className="qualification__calendar">
-                                <HiOutlineCalendar className="qualification__calendar-icon" />
+                            <h3 className="education__title">IIT Guwahati</h3>
+                            <div className="education__content">
+                                <span className="education__subtitle">B.Tech</span>
+                                <span className="education__subtitle">Major: Civil Engineering</span>
+                                <span className="education__subtitle">Minor: Mathematics & Computing</span>
+                                <span className="education__subtitle">CGPA : 7.91</span>
+                            </div>
+                            <div className="education__calendar">
+                                <HiOutlineCalendar className="education__calendar-icon" />
                                 2022-2026
                             </div>
                         </div>
                         <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
+                            <span className="education__rounder"></span>
+                            <span className="education__line"></span>
                         </div>
                     </div>
-                    <div className="qualification__data">
+                    <div className="education__data">
                         <div></div>
                         <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
+                            <span className="education__rounder"></span>
+                            <span className="education__line"></span>
                         </div>
                         <div>
-                            <h3 className="qualification__title">CBSE Board</h3>
+                            <h3 className="education__title">CBSE Board</h3>
                             <div className="education__content">
-                                <span className="qualification__subtitle">Senior Secondary</span>
+                                <span className="education__subtitle">Senior Secondary</span>
+                                <span className="education__subtitle">95.2 %</span>
                             </div>
-                            <div className="qualification__calendar">
-                                <HiOutlineCalendar className="qualification__calendar-icon" />
+                            <div className="education__calendar">
+                                <HiOutlineCalendar className="education__calendar-icon" />
                                 2021-2022
                             </div>
                         </div>
                     </div>
-                    <div className="qualification__data">
+                    <div className="education__data">
                         <div>
-                            <h3 className="qualification__title">CBSE Board</h3>
+                            <h3 className="education__title">CBSE Board</h3>
                             <div className="education__content">
-                                <span className="qualification__subtitle">Secondary</span>
+                                <span className="education__subtitle">Secondary</span>
+                                <span className="education__subtitle">96.5 %</span>
                             </div>
-                            <div className="qualification__calendar">
-                                <HiOutlineCalendar className="qualification__calendar-icon" />
+                            <div className="education__calendar">
+                                <HiOutlineCalendar className="education__calendar-icon" />
                                 2019-2020
                             </div>
                         </div>
                         <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
+                            <span className="education__rounder"></span>
+                            <span className="education__line"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> 
-  );
+    );
 }
 
-export default Qualification;
+export default Education;

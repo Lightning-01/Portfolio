@@ -1,14 +1,14 @@
-.qualification__container {
-    max-width: 768px;
+.education__container {
+    width: 100%;
 }
 
-.qualification__tabs {
+.education__tabs {
     display: flex;
     justify-content: center;
     margin-bottom: var(--mb-2);
 }
 
-.qualification__button {
+.education__button {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     color: var(--title-color);
@@ -16,58 +16,60 @@
     cursor: pointer;
 }
 
-.qualification__button:hover {
+.education__button:hover {
     color: var(--title-color-dark);
 }
 
-.qualification__icon {
+.education__icon {
     font-size: 1.8rem;
     margin-right: var(--mb-0-25);
 }
 
-.qualification__active {
+.education__active {
     color: var(--title-color-dark)
 }
 
-.qualification__sections {
+.education__sections {
     display: grid;
-    grid-template-columns: 0.5fr;
+    grid-template-columns: 1fr;
     justify-content: center;
 }
 
-.qualification__content {
+.education__content {
     display: none;
 }
 
-.qualification__content-active {
+.education__content-active {
     display: block;
 }
 
-.qualification__data {
+.education__data {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
 }
 
-.qualification__title {
+.education__title {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
 }
 
 .education__content {
     margin-bottom: var(--mb-1);
+    display: flex;
+    flex-direction: column;
 }
 
-.qualification__subtitle {
+.education__subtitle {
     display: block;
     font-size: var(--small-font-size);
 }
 
-.qualification__calendar {
+.education__calendar {
     font-size: var(--small-font-size);
 }
 
-.qualification__rounder {
+.education__rounder {
     display: inline-block;
     width: 13px;
     height: 13px;
@@ -75,7 +77,7 @@
     border-radius: 50%;
 }
 
-.qualification__line {
+.education__line {
     display: block;
     width: 1px;
     height: 100%;
@@ -85,31 +87,31 @@
 
 /* BREAK POINTS */
 @media screen and (max-width: 992px) {
-    .qualification__container {
+    .education__container {
         margin-left: auto;
         margin-right: auto;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .qualification__container {
+    .education__container {
         margin-left: var(--mb-1-5);
         margin-right: var(--mb-1-5);
     }
 }
 
 @media screen and (max-width: 576px) {
-    .qualification__sections {
+    .education__sections {
         grid-template-columns: initial;
     }
 
-    .qualification__button {
+    .education__button {
         margin: 0 var(--mb-0-75);
     }
 }
 
 @media screen and (max-width: 350px) {
-    .qualification__data {
+    .education__data {
         gap: 0.5rem;
     }
 }
