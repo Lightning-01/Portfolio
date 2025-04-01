@@ -40,8 +40,9 @@ const Education = () => {
                             <span className="education__line"></span>
                         </div>
                         <div>
-                            <h3 className="education__title">CBSE Board</h3>
+                            <h3 className="education__title">Apex Int. School, Jaipur</h3>
                             <div className="education__content">
+                                <span className="education__subtitle">CBSE Board</span>
                                 <span className="education__subtitle">Senior Secondary</span>
                                 <span className="education__subtitle">95.2 %</span>
                             </div>
@@ -53,8 +54,9 @@ const Education = () => {
                     </div>
                     <div className="education__data">
                         <div>
-                            <h3 className="education__title">CBSE Board</h3>
+                            <h3 className="education__title">MPS, Ajmer</h3>
                             <div className="education__content">
+                                <span className="education__subtitle">CBSE Board</span>
                                 <span className="education__subtitle">Secondary</span>
                                 <span className="education__subtitle">96.5 %</span>
                             </div>

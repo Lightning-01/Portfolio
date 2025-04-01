@@ -1,16 +1,20 @@
 resume_info = {
     "name": "Naman Sharma",
     "education": "B.Tech in Civil Engineering at IIT Guwahati with a minor in Mathematics and Computing",
+    "general": "Hi, I'm Naman Sharma, a 3rd year undergraduate student at IIT Guwahati. While my academic foundation is in civil engineering, my passion has led me toward software development, machine learning, and finance. I thrive on solving complex problems and building meaningful solutions. My academic journey at IIT Guwahati has provided me with a strong analytical foundation, while my self-driven exploration of programming and data science has shaped my technical interests. What drives me is the opportunity to create impactful applications that solve real-world challenges. I'm particularly fascinated by the intersection of technology and finance, which has inspired several of my independent projects. When I'm not coding or working on projects, I enjoy playing tennis occasionally to stay active. I also spend my free time listening to music, playing video games, watching movies, and reading books. These diverse interests help me maintain a balanced lifestyle while staying creative and refreshed.",
     "skills": [
-        "C/C++", "Python", "React.js", "Node.js", "MongoDB", "Express.js",
-        "Socket.io", "PostgreSQL", "Data Structures & Algorithms",
-        "Machine Learning", "Matplotlib", "NumPy", "Pandas"
+        {"title": "DevOps and Cloud", "techs": "CI/CD Pipelines, Docker, Cloud Platforms(AWS / GCP), Version Control(Git, GitHub)"},
+        {"title": "Machine Learning & Data Science", "techs": "Languages and Tools(NumPy, Pandas, Scikit-learn, TensorFlow, Keras), Data Visualization(Matplotlib, Seaborn, Power BI), Data Preprocessing, Time-Series Analysis(LSTM, Financial Modeling)"},
+        {"title": "Full Stack Development", "techs": "Frontend(HTML, CSS, JavaScript, React.js), Backend(Node.js, Express.js, REST APIs), Database(MongoDB, PostgreSQL)"}
     ],
     "projects": [
-        {"title": "Options Pricing", "description": "Developed Black-Scholes and Binomial models for option pricing."},
-        {"title": "LSTM Stock Predictor", "description": "Built an LSTM network for predicting MSFT stock prices."},
-        {"title": "Compiler", "description": "Implemented a compiler using C and x86 assembly."},
-        {"title": "Web Chat", "description": "Developed a real-time chat application with React.js and Socket.io."}
+        {"title": "Customer Churn Prediction", "description": "Built a machine learning model to predict customer churn using Logistic Regression, Decision Trees, Random Forest, SVM, and Neural Networks. Achieved 84% accuracy with optimized feature engineering and model evaluation.", "link": "https://github.com/Lightning-01/Customer-Churn-Prediction"},
+        {"title": "Movie Recommendation System", "description": "Built a Collaborative Filtering-based movie recommendation system using matrix factorization and similarity-based techniques. Processed the MovieLens 20M dataset to create a scalable User-Item interaction matrix for personalized recommendations, optimizing predictions with RMSE and MAPE metrics.", "link": "https://github.com/Lightning-01/Movie-Recommendation-System"},
+        {"title": "LSTM Stock Predictor", "description": "Developed an LSTM-based stock predictor to analyze Microsoft (MSFT) stock trends using time-series forecasting. The model was trained on historical closing prices and optimized for short-term predictions.", "link": "https://github.com/Lightning-01/LSTM-Model"},
+        {"title": "Compiler", "description": "Developed a C-based compiler using x86 assembly, capable of parsing and translating high-level code into assembly instructions. Supports arithmetic operations, loops, conditionals, and successfully compiles FizzBuzz. Implemented a Lexer, Parser, and Code Generator from scratch.", "link": "https://github.com/Lightning-01/Compiler"},
+        {"title": "Web Chat", "description": "Developed a real-time chat application using React.js, Node.js, and Socket.io, enabling instant communication between users. Implemented WebSocket-based messaging for seamless real-time updates. Used MongoDB for efficient data storage and integrated advanced authentication mechanisms for secure user access. Ensured a responsive and user-friendly chat interface for optimal engagement.", "link": "https://github.com/Lightning-01/Web-Chat"},
+        {"title": "Blog Application", "description": "Developed a full-stack blog platform with secure authentication and user management. Implemented full CRUD (Create, Read, Update, Delete) functionality, enabling users to manage blogs seamlessly. Integrated MongoDB Atlas for efficient data storage and JWT authentication for security, ensuring a user-friendly and robust platform.", "link": "https://github.com/Lightning-01/Blog"},
+        {"title": "Options Pricing", "description": "Developed option pricing models for European Call and Put options using the Black-Scholes-Merton model and the N-step Binomial model. Analyzed option payoffs and visualized pricing trends using financial data.", "link": "https://github.com/Lightning-01/Options-Pricing"},
     ],
     "certifications": [
         "JPMorgan Chase & Co. Quantitative Research Virtual Experience",
