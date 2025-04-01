@@ -59,6 +59,10 @@
     margin-bottom: var(--mb-3);
 }
 
+.button__icon-wrapper {
+    margin-left: 0.5rem;
+}
+
 .home__img {
     background: url(../../assets//profile.png);
     background-repeat: no-repeat;
