@@ -39,7 +39,7 @@ def chat():
 
     # Call Together AI API
     response = client.chat.completions.create(
-        model="meta-llama/Llama-3.3-70B-Instruct-Turbo",
+        model="meta-llama/Llama-3.3-70B-Instruct-Turbo-Free",
         messages=[{"role": "user", "content": prompt}],
     )
 
