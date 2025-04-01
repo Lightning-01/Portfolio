@@ -4,7 +4,7 @@ import { IoChatboxOutline } from "react-icons/io5";
 
 
 
-const Chatbot = () => {
+const Chatbot = ({ isMenuActive }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
@@ -12,6 +12,10 @@ const Chatbot = () => {
   const toggleChat = () => {
     setIsOpen(!isOpen);
   };
+
+  const chatContainerClass = isMenuActive 
+    ? "chat-container menu-active" 
+    : "chat-container";
 
   const sendMessage = async () => {
     if (!input.trim()) return;
@@ -36,7 +40,7 @@ const Chatbot = () => {
   };
 
   return (
-    <div className="chat-container">
+    <div className={chatContainerClass}>
       <button className="chat-button" onClick={toggleChat}><IoChatboxOutline />
       </button>
       {isOpen && (

@@ -1,3 +1,4 @@
+import React, {useState} from "react";
 import './App.css';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
@@ -8,10 +9,17 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Chatbot from './components/chatbot/Chatbot';
 
-const App = () => {
+function App() {
+  const [isMenuActive, setIsMenuActive] = useState(false);
+  
+  // Function to update menu state
+  const handleMenuToggle = (isActive) => {
+    setIsMenuActive(isActive);
+  };
+
   return (
     <>
-      <Header/>
+      <Header onMenuToggle={handleMenuToggle} />
       <main className='main'>
         <Home />
         <About />
@@ -20,7 +28,7 @@ const App = () => {
         <Contact />
       </main>
       <Footer />
-      <Chatbot />
+      <Chatbot isMenuActive={isMenuActive} />
     </>
   );
 }

@@ -2,6 +2,8 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: var(--z-fixed);
+    transition: bottom 0.3s ease;
   }
   
   .chat-button {
@@ -119,4 +121,26 @@
     max-width: 80%;
     align-self: flex-start;
   }
+
+  @media screen and (max-width: 768px) {
+    .chat-container {
+      bottom: 50px; /* Just above the header bar */
+    }
+    
+    /* Higher position when menu is active */
+    .chat-container.menu-active {
+      bottom: 210px; /* Adjust based on your menu height */
+    }
+    
+    /* Adjust panel position too */
+    .chat-panel {
+      bottom: 130px; /* Default position */
+    }
+    
+    .menu-active .chat-panel {
+      bottom: 290px; /* Adjust based on your menu height */
+    }
+  }
+
+  
   

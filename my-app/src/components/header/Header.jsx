@@ -3,8 +3,18 @@ import './header.css';
 import { HiOutlineHome, HiOutlineUser, HiOutlineBadgeCheck, HiOutlineClipboardList, HiOutlinePhotograph, HiOutlineMail, HiX, HiOutlineMenu } from "react-icons/hi";
 
 
-const Header = () => {
+const Header = ({ onMenuToggle }) => {
     const[Toggle, showMenu] = useState(false);
+
+    const toggleMenu = () => {
+        const newToggleState = !Toggle;
+        showMenu(newToggleState);
+        
+        // Notify parent component about menu state change
+        if (onMenuToggle) {
+            onMenuToggle(newToggleState);
+        }
+    };
 
     return(
         <header className="header">
@@ -38,9 +48,9 @@ const Header = () => {
                             </a>
                         </li>
                     </ul>
-                    <HiX className="nav__close" onClick={() => showMenu(!Toggle)} />
+                    <HiX className="nav__close" onClick={toggleMenu} />
                 </div>
-                <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
+                <div className="nav__toggle" onClick={toggleMenu}>
                     <HiOutlineMenu />
                 </div>
             </nav>
