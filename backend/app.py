@@ -16,7 +16,16 @@ def chat():
     data = request.get_json()
     user_message = data.get("message", "")
 
-    # Structured prompt with resume data
+    # Build skills and projects sections separately
+    skills_text = ""
+    for s in resume_info['skills']:
+        skills_text += f"- {s['title']}: {s['techs']}\n"
+    
+    projects_text = ""
+    for p in resume_info['projects']:
+        projects_text += f"- {p['title']}: {p['description']}. Link: {p['link']}\n"
+    
+    # Structured prompt with resume data - avoiding f-string with backslash issues
     prompt = f"""
     You are a chatbot trained to answer questions about my resume. You are hosted on my portfolio website. The website contains various sections like home(brief introduction and download cv button and also buttons for my socials), about me(my education and detail about me), my skills, my projects, my contact information. When asked to answer briefly, try to keep it as short as possible, only when asked by user. Otherwise, answer as you would. For example, when you are asked aboot project names, just mention the project titles. Give description and links only when asked. Same goes with skills.
      
@@ -30,10 +39,10 @@ def chat():
     Some more general information about me: {resume_info['general']}.
 
     My technical skills include: 
-    {''.join([f"- {s['title']}: {s['techs']}" + "\n" for s in resume_info['skills']])}
+    {skills_text}
     
     I have worked on several projects:
-    {''.join([f"- {p['title']}: {p['description']}. Link: {p['link']}" + "\n" for p in resume_info['projects']])}
+    {projects_text}
     
     I have also earned the following certifications:
     {', '.join(resume_info['certifications'])}.
