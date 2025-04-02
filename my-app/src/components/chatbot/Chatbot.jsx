@@ -24,8 +24,10 @@ const Chatbot = ({ isMenuActive }) => {
     setMessages(newMessages);
     setInput("");
 
+    const BACKEND_URL = "https://portfolio-2dv5.onrender.com";
+
     try {
-      const response = await fetch("http://127.0.0.1:5000/chat", {
+      const response = await fetch(`${BACKEND_URL}/chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
