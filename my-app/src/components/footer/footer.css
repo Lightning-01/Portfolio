@@ -1,10 +1,30 @@
 .footer {
     background-color: var(--container-color);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%); 
+    position: relative;
+    left: 0;
+    right: 0;
 }
 
 .footer__container {
-    padding: 2rem 0 6rem;
+    padding: 2rem 1rem 6rem;
+    margin: 0 auto;
+}
+
+.footer .container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.full-width {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 .footer__title, .footer__link {
@@ -55,6 +75,30 @@
 }
 
 /* BREAK POINTS */
+/* Target medium-sized screens specifically */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer {
+      width: 100vw;
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      left: 0;
+      right: 0;
+      position: relative;
+      box-sizing: border-box;
+    }
+    
+    .footer__container {
+      width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
 @media screen and (max-width: 992px) {
     .footer__social-link {
         padding: 0.25rem;

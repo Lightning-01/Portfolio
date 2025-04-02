@@ -7,7 +7,7 @@ import React from 'react';
  const Footer = () => {
    return (
      <footer className="footer">
-         <div className="footer__container container">
+         <div className="footer__container container full-width">
              <h1 className="footer__title">Naman</h1>
              <ul className="footer__list">
                  <li>
