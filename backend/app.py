@@ -30,10 +30,10 @@ def chat():
     Some more general information about me: {resume_info['general']}.
 
     My technical skills include: 
-    {''.join([f"- {s['title']}: {s['techs']}\n" for s in resume_info['skills']])}.
+    {''.join([f"- {s['title']}: {s['techs']}\n" for s in resume_info['skills']])}
     
     I have worked on several projects:
-    {''.join([f"- {p['title']}: {p['description']}. Link: {p['link']}.\n" for p in resume_info['projects']])}
+    {''.join([f"- {p['title']}: {p['description']}. Link: {p['link']}\n" for p in resume_info['projects']])}
     
     I have also earned the following certifications:
     {', '.join(resume_info['certifications'])}.
