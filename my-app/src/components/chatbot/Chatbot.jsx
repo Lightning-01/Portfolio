@@ -24,7 +24,7 @@ const Chatbot = ({ isMenuActive }) => {
     setMessages(newMessages);
     setInput("");
 
-    const BACKEND_URL = "https://portfolio-2dv5.onrender.com";
+    const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
     try {
       const response = await fetch(`${BACKEND_URL}/chat`, {
