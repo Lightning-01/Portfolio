@@ -5,7 +5,7 @@ from resume_data import resume_info
 import os
 
 app = Flask(__name__)
-CORS(app)  # Allow frontend to call this backend
+CORS(app, resources={r"/*": {"origins": "*"}})  # Allow frontend to call this backend
 
 # Load Together AI API Key
 TOGETHER_API_KEY = "4a6b45af1398ff379b5c85f94bbdf4f7396dbea631ead2eefd30f9402990efbb"
